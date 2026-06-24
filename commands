@@ -1,0 +1,1 @@
+$decodedBytes = [System.Convert]::FromBase64String((Get-Content -Raw -Path "C:\path\to\output.txt"))

